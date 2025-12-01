@@ -4,10 +4,10 @@ const repeatString = function(str, mult) {
     for (let x = 0; x < mult; x++) {
         string += str;
     }
-    return string;
+    return string.join('');
 };
-let str = 'This is a string.'
-console.log(str.repeat(5));
+
+console.log(repeatString('This is a String. ', 5));
 
 // Do not edit below this line
 module.exports = repeatString;
