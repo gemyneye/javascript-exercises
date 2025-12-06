@@ -1,10 +1,7 @@
-const convertToCelsius = function(tempFahr) {
-  return parseFloat(((tempFahr - 32) * (5 / 9)).toFixed(1));
-};
+const convertToCelsius = tempFahr => parseFloat(((tempFahr - 32) * (5 / 9)).toFixed(1));
 
-const convertToFahrenheit = function(tempCelsius) {
-  return parseFloat((tempCelsius * (9 / 5) + 32).toFixed(1));
-};
+const convertToFahrenheit = tempCelsius => parseFloat((tempCelsius * (9 / 5) + 32).toFixed(1));
+
 
 // Do not edit below this line
 module.exports = {
